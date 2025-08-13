@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifcity and cascade</title>
+    <style>
+        /*specifivcity = 1*/
+        h1{
+            color: aqua;
+        }
+        /*specificity =10*/
+        .yellow
+        {
+            color: yellow;
+        }
+         /*specificity =10*/
+        .cred
+        {
+            color: red;
+        }
+         /*specificity =10*/
+        .cpurple
+        {
+            color: purple;
+        }
+         /*specificity =10*/
+         /*this is an example of attribute selctors*/  
+        [aria-details="123"]
+        {
+            color: black !important;
+          }
+          /*the specificity of this selcotor is 1+10+10+10+10=41*/
+          a.ahmadclass.hassan-class[href]:hover
+          {
+            color: aliceblue ;
+          }
+    </style>
+</head>
+<body>
+    <h1 class="yellow cred cpurple" aria-details="123" style="color: bisque">this is Specifcity  cascade algorithm thing</h1>
+</body>
+</html>
