@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        :root{
+            --col:rgb(255, 14, 14);
+            --2col:blue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li
+        {
+            list-style:none ;
+            padding: 34px;
+            border: 2px solid black;
+        }
+        ul li:first-child
+        {
+            background-color: aqua;
+        }
+        ul
+        {
+            display: flex;
+            padding: 5px;
+        }
+        div:first-child
+        {
+            background-color: var(--col);
+        }
+        .container
+        {
+            background-color:var(--2col);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa minima magnam repellendus cupiditate soluta exercitationem, delectus, magni voluptate, fugit consequatur laboriosam aut!
+    </div>
+</body>
+</html>

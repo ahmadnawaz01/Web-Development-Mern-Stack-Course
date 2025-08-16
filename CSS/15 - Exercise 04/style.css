@@ -1,0 +1,62 @@
+
+
+:root{
+    --navtextcol:white;
+    --navbackcol:rgb(34, 31, 31);
+    --navhighligh:red;
+    --background:rgb(12, 11, 11);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color:var(--background);
+    position: relative;
+}
+.navbar
+{
+    border-bottom: 2px solid grey;
+    height: auto;
+    width: 100vw;
+    background-color: var(--navbackcol);
+    position:sticky
+}
+.heading
+{
+    color: var(--navhighligh);
+    font-style: italic;
+    text-align: center;
+    display:flexbox;
+    text-decoration: underline;
+}
+.home
+{
+    display:inline-block;
+    padding: 0px 0px 0px 0px;
+
+}
+.id
+{
+
+}
+.imageid
+{
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+
+}
+h4
+{
+    color:var(--navtextcol);
+    font-style: italic;
+}
+button{
+    color: var(--navtextcol);
+    background-color: var(--navbackcol);
+    height: 20px;
+    width: 60px;
+}
