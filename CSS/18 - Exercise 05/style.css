@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(25, 24, 24);
+    font-family: "Poppins", sans-serif;
+}
+nav
+{
+    border-bottom: 2px solid rgb(52, 52, 52);
+    height: auto;
+    width: auto;
+    position: sticky;
+    background-color: black;
+    text-align: left;
+    padding: 21px 0px 19px 23px ;
+    font-size:x-large;
+    top: 0;
+    box-sizing: border-box;
+
+}
+footer
+{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    padding: 15px;
+    border-top: 2px solid rgb(61, 61, 61);
+}
+footer input
+{
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+    position: relative;
+    left: 0;
+    margin: 15px;
+
+}
+footer h3
+{
+    color: rgb(222, 3, 3);
+    height: 30px;
+    width: 200px;
+    display: inline;
+    margin-left: 20px;
+}
+.navimage
+{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+
+}
+nav a
+{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    padding-right: 50px;
+    color: red;
+}
+nav a:hover
+{
+    color: rgb(242, 242, 242);
+}
+footer h3:hover
+{
+    color: rgb(242, 242, 242);
+}
+footer a
+{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: red;
+    font-size: x-large;
+}
+footer a:hover
+{
+     color: rgb(242, 242, 242);
+}
+footer input:hover
+{
+background-color: rgb(207, 207, 207);
+}
+main div
+{
+    border: 2px solid slategray;
+    width: auto;
+    height: auto;
+    color: red;
+    background-color: rgb(31, 31, 31);
+    border-radius: 20px;
+    margin: 25px;
+    text-align: center;
+    text-decoration: underline;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+main div:hover
+{
+    color:whitesmoke;
+}
+main{
+    display: inline;
+    height: auto;
+    width: auto;
+}
+iframe
+{
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+}
