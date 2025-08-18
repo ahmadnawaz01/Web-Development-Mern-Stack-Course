@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .contain
+        {
+            border: 2px solid purple;
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr; */
+          
+            gap: 20px;
+            width: 80vw;
+            height: 255px;
+            justify-items: right;
+            align-items: center;
+             grid-template-columns: repeat(3 40px);
+        }
+         .item
+        {
+            height: 55px;
+            width: 55px;
+            border: 2px solid red;
+        }
+            /*
+        /* .item4
+        {
+            grid-row: 1/2;
+            grid-column: pehla/dosara;
+        } */
+        .item1
+        {
+              justify-self: baseline;
+              align-self: start;
+        } 
+    </style>
+
+</head>
+<body>
+    <div class="contain">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
