@@ -1,0 +1,70 @@
+.container {
+    width: 80vw;
+    background-color: red;
+    height: 60vh;
+    position: relative;
+
+}
+
+.box {
+    height: 121px;
+    background-color: black;
+    width: 121px;
+    border-radius: 90px;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+.rapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: bouncex 3s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-300px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    55% {
+        transform: translateY(-220px);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-150px);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes bouncex {
+    from {}
+
+    to {
+        transform: translateX(1000px);
+    }
+}

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.797);
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+}
+nav div
+{
+    display: inline-block;
+}
+nav
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 12px 24px;
+}
+.logo img
+{
+    padding: 10px;
+}
+.navbutton a
+{
+    font-size: 18px ;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.buy
+{
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+}
+.buydiv
+{
+    border: 2.1px solid black;
+    height: 45px;
+    width:120px;
+    align-content: center;
+    border-radius: 7px;
+}
+.navlang a
+{
+    margin-left: 20px;
+}
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lang
+{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+.search span svg
+{
+    height: 20px;
+}
+.content
+{
+    width: 80vw;
+    padding:70px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h1
+{
+    font-size:50px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.content h2
+{
+    padding-bottom: 40px;
+    font-weight: 400;
+}
+.content a h3
+{
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(44, 187, 244);
+}
+.content a
+{
+    text-decoration: none;
+}
+.content2
+{
+align-self:center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.content2 img
+{
+    height: 80px;
+    padding-right: 15px;
+}
+.content2 h2
+{
+    font-weight: 400;
+    display: flex;
+}
+.content2 h5
+{
+    font-weight: 300;
+    padding-left: 10px;
+}
+.content3 .contain
+{
+height: 250px;
+max-width:302px;
+width: 100%;
+background-color: #f9f9f9;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.content3
+{
+    padding-top: 20px;
+    width: 60vw;
+    display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+ color: rgba(0, 0, 0, 0.772);
+ row-gap: 30px;
+ column-gap: 10px;
+
+}
+.content3 .contain a
+{
+text-decoration: none;
+font-weight:700;
+padding: 8px 10px;
+border-radius: 7px;
+margin-bottom: 15px;
+color: rgb(255, 255, 255);
+background-color:rgb(83, 182, 83);
+
+}
+.content3 .contain h3
+{
+    padding-bottom: 50px;
+}
+.content3 .contain h6
+{
+    font-weight: 300;
+    font-size: 10px;
+    word-break: break-all;
+    padding: 25px;
+}
+.content3 .contain h5
+{
+    padding-top: 5px;
+  
+    font-weight: 400;
+}
+.content, .content2, .content3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+footer
+{
+    margin-top: 50px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width:455px){
+    .navbutton a
+    {
+        display: none;
+    }
+    .buydiv
+{
+   display: none;
+}
+.navlang a
+{
+    display: none;
+}
+
+    
+}
+    
+.mainfoot
+{
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+}
+.fcon
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    column-gap: 100px;
+    margin-top: 25px;
+
+}
+.footcontent
+{
+    max-width: 360px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(48, 48, 48);
+}
+.footcontent h2
+{
+    font-weight: 800;
+    color: white;
+}
+.footcontent p
+{
+    padding: 5px 25px;
+    color: white;
+    text-align: center;
+}
+.footbox
+{
+max-width: 350px;
+max-height: 350px;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color:white;
+padding: 25px
+
+}
+.footbox h4
+{
+    font-weight: 500;
+    font-size: 20px;
+    align-self:center;
+    color:rgb(1, 149, 207) ;
+    padding-bottom: 50px;
+}
+.footbox label
+{
+    color:rgb(48, 48, 48);
+}
+.footbox input
+{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.footbox a
+{
+    width: 250px;
+    height: 45px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    padding-top: 8px;
+    background-color:rgb(1, 149, 207) ;
+    color: white;
+    border-radius: 7px;
+}
+.footcontent2
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.footcontent2 h2
+{
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+.footcontent2 p
+{
+    color: white;
+    padding-bottom: 10px;
+}
+.footcontent3
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.footcontent3 p
+{
+    color: white;
+}
+.footcontent3 a
+{
+    color:rgb(1, 149, 207) ;
+    text-decoration: none;
+    margin-left: auto;
+}
+.footcontent4
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+
+}
+.footcontent4 div
+{
+display: flex;
+gap: 4px;
+flex-wrap: wrap;
+}
+.footcontent4 h2
+{
+    color: white;
+}
+.footcontent4 p
+{
+color: white;
+display: flex;
+}
+.footcontent4  a
+{
+color:rgb(1, 149, 207) ;
+text-decoration: none;
+}
+
+
