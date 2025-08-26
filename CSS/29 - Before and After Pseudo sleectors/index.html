@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        .navigation {
+            margin: 3px 23px;
+            font-size: 20px;
+            display: flex;
+        }
+
+        header::before {
+            content: "";
+            /* required for pseudo-element */
+            position: absolute;
+            /* allow positioning */
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* span full width */
+            height: 100%;
+            /* cover the header */
+            background-color: aqua;
+            /* aqua with opacity */
+            z-index: -1;
+            /* push behind header content */
+            opacity: 0.2;
+        }
+
+        .navigation::after {
+            content: "after";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+
+        </nav>
+        <section>
+            <h3>
+                Welcome to Coding World
+            </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nulla perferendis illo quam in, dolore
+                accusantium non totam atque dolorem est, adipisci repellat. Consectetur voluptatum, laboriosam harum
+                culpa itaque rem in animi commodi tenetur incidunt ut saepe illo sit, eligendi corrupti, enim voluptates
+                ratione asperiores. Blanditiis magni molestiae ipsum dolorum accusamus quia enim fuga incidunt?</p>
+        </section>
+    </header>
+</body>
+
+</html>
