@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #FFFDE8;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+html body {
+    
+    width: 100vw;
+    min-height: 100vh;
+}
+body
+{
+    position: relative;
+    background-image: url(bg.webp);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 100%;
+    min-height: 100vh;
+    height: 100%;           /* ensure at least viewport height */
+    background: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.644) 0%,
+            rgba(0, 0, 0, 0.863) 70%,
+            rgba(0, 0, 0, 0.849) 100%);
+    z-index: 9;
+    pointer-events: none;
+}
+.nav
+{
+    position:sticky;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav>a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 10px;
+}
+.icon
+{
+    font-size: clamp(1.5rem, 2vw, 3rem);
+}
+.logotext
+{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.links
+{
+    font-size: clamp(1.2rem, 1.6vw, 1.3rem);
+    font-weight: 400;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.links>a>symbol
+{
+    font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+main{
+    padding-top: 100px;
+    color: #FFFDE8;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    row-gap: 60px;
+}
+@media  screen and (max-width: 800px)
+{
+    .links {
+        display: none;
+        flex-direction: column; 
+        width: 100%;
+        gap: 15px;
+    }
+
+    main{
+        padding-top:0px;
+    }
+}
+.container
+{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container img{
+    align-self: center;
+}
+.container h1
+{
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
+    font-style: italic;
+    align-self: center;
+}
+.container h3
+{
+    font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+    align-items: center;
+}
+.container h4{
+    font-weight: 300;
+    font-size: smaller;
+    text-align:justify;
+}
+.container button
+{
+    padding: 10px 35px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-self:flex-end;
+    font-weight: 700;
+    border-radius: 25px;
+}
+@media  screen and (max-width: 850px)
+{
+    main{
+        padding-top:0px;
+    }
+}
+@media  screen and (max-width: 500px)
+{
+.container h4
+{
+    display: none;
+}
+.container button
+{
+    align-self: center;
+}
+}
+.logincontainer
+{
+    width: 300px;
+}
+.logincontainer
+{
+     width:400px;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     position: relative;
+}
+.logincontainer h1
+{
+    font-size: clamp(1.6rem, 2.7vw, 2.4rem);
+    align-self: center;
+    margin-bottom: 10px;
+}
+.logincontainer label
+{
+    font-size: smaller;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    left: 10px;
+    position: relative;
+    color: #FFFDE8;
+}
+.logincontainer input
+{
+    border-radius: 30px;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFDE8;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.remember
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+}
+.remember input
+{
+margin-top: 15px;
+align-self: flex-start
+}
+.remember label
+{
+    font-size:medium;
+    font-weight: 400;
+    align-self:flex-start;
+}
+.remember h4
+{
+    font-weight: 400;
+    margin-right: 45px;
+}
+.logincontainer button
+{
+    padding: 10px 1px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+    border:1px solid rgba(0, 0, 0, 0);
+    background:linear-gradient(to right,#140703,#46271c);
+    font-weight: 600;
+    font-size: large;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+.logincontainer>h4
+{
+    font-weight: 400;
+}
+.logincontainer input::placeholder
+{
+    color: #FFFDE8;
+}
+.rem
+{
+    overflow:visible;
+}
