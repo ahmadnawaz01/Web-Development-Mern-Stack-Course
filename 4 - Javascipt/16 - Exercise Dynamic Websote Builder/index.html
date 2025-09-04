@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Card Builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #0F0F0F;
+        }
+
+        .container {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border: 2px solid hsl(0, 0%, 6%);
+            border-radius: 10px;
+            justify-content: left;
+            align-items: center;
+            background-color: hsl(0, 0%, 6%);
+            min-width: 500px;
+            max-width: 900px;
+            margin-left: 10px;
+        }
+
+        .body {
+            background-color: hsl(0, 0%, 6%);
+            color: #f3f1f1;
+        }
+
+        .image img {
+            border-radius: 8px;
+            width: 200px;
+        }
+
+        .image {
+            position: relative;
+            margin: 5px;
+        }
+
+        .image h4 {
+            position: absolute;
+            bottom: 10PX;
+            right: 5px;
+            z-index: 999;
+            border-radius: 5px;
+            padding: 2px 3px;
+            font-size: smaller;
+            background-color: hsl(0, 0%, 6%, 0.65);
+            color: rgb(255, 255, 255);
+        }
+
+        .details {
+            align-self: baseline;
+            min-width: 250px;
+            max-width: 650px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .title {
+            padding: 8px 4px;
+            font-weight: 900;
+            font-size: larger;
+        }
+
+        .details h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+            font-weight: 600;
+            color: #f3f1f1;
+        }
+
+        .details h5 {
+            overflow: hidden;
+            color: hsl(0, 0%, 67%);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 600;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image"><img width="200px"
+                    src="https://i.ytimg.com/vi/-urTPhh7gNk/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA17z_ajybS4BavTY8MBxRjCuHaWw"
+                    alt="">
+                <h4 class="time">4:47</h4>
+            </div>
+            <div class="details">
+                <h3 class="title">Blockbuster | Coke Studio Pakistan | Season 15 | Faris Shafi x Umair Butt x Gharwi
+                    Group
+                </h3>
+                <h5 class="cname">Coke Studio Pakistan . 69M views . 1 year ago</h5>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
