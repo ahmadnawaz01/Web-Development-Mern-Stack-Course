@@ -10,7 +10,7 @@ function createcard(image, title, views, duration, cname, old) {
         viewsstr = (views / 1000 ).toFixed(1)+ " K";
     }
     let cards = `<div class="card">
-            <div class="image"><img width="200px" src="${image}" alt="">
+            <div class="image"><img  src="${image}" alt="">
                 <h4 class="time">${duration}</h4>
             </div>
             <div class="details">

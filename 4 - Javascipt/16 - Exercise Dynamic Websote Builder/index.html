@@ -28,9 +28,6 @@
             justify-content: left;
             align-items: center;
             background-color: hsl(0, 0%, 6%);
-            min-width: 500px;
-            max-width: 900px;
-            margin-left: 10px;
         }
 
         .body {
@@ -40,8 +37,15 @@
 
         .image img {
             border-radius: 8px;
-            width: 200px;
+            width: 300px;
         }
+
+        @media screen and (max-width:800px) {
+            .image img {
+                width: 180px;
+            }
+        }
+
 
         .image {
             position: relative;
@@ -63,7 +67,6 @@
         .details {
             align-self: baseline;
             min-width: 250px;
-            max-width: 650px;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -80,7 +83,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             display: block;
-            width: 100%;
+
             font-weight: 600;
             color: #f3f1f1;
         }
@@ -92,7 +95,6 @@
             white-space: nowrap;
             font-weight: 600;
             display: block;
-            width: 100%;
         }
     </style>
 </head>
