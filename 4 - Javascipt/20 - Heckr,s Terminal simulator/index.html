@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heckr Terminal Simulator</title>
+    <style>
+        body {
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        const additem = async (item) => {
+            await randomdelay();
+            let div = document.createElement("div");
+            div.innerHTML = item;
+            document.body.append(div);
+        }
+        const randomdelay = () => {
+            return new Promise((resolve, reject) => {
+                timeout = 1 + Math.random() * 6;
+                setTimeout(() => {
+                    resolve()
+                }, timeout * 1000)
+            })
+        }
+
+        async function main() {
+            setInterval(() => {
+                let last = document.body.lastElementChild;
+                if (last.innerHTML.endsWith("...")) {
+                    last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
+                } else {
+                    last.innerHTML = last.innerHTML + ".";
+                }
+
+            }, 700)
+
+
+
+            let text = ["Initialized Hacking now reading your file", "Reading your files", "Password files Detected",
+                "Sending all passswords and personal files to server",
+                "Cleaning up"
+            ]
+
+            for (const item of text) {
+                await additem(item)
+
+            }
+        }
+        main();
+
+
+    </script>
+</body>
+
+</html>
