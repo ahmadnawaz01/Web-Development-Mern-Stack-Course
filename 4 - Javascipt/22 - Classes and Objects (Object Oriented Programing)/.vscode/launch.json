@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/A/Desktop/Web Devoplement/Web-Development-Course/4 - Javascipt/22 - Classes and Objects (Object Oriented Programing)",
+      "program": "c:/Users/A/Desktop/Web Devoplement/Web-Development-Course/4 - Javascipt/22 - Classes and Objects (Object Oriented Programing)/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
