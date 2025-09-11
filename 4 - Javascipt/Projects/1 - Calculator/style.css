@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    z-index: 15;
+}
+
+.cal {
+    
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+img {
+   
+    width: 360px;
+}
+
+button {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 1px;
+    width: 72px;
+    height: 72px;
+    margin-top: 2px;
+    text-align: center;
+    background-color: hsl(0, 0%, 19%);
+    color: white;
+    border: 1px solid white;
+}
+
+.brown {
+    background-color: hsl(0, 0%, 36%);
+}
+
+.ora {
+    background-color: hsl(34, 100%, 50%);
+}
+
+.screen {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(0, 0, 0);
+    width: 324px;
+    height: 685px;
+    border-radius: 25px;
+    border: px solid black;
+    margin-bottom: 10px;
+}
+
+input {
+    grid-area: input;
+    position: absolute;
+    width: 310px;
+    height: 59px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: right;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    top: -90px;
+    border: 4px solid black;
+}
+
+.last {
+    margin-bottom: 22px;
+}
+
+.screen h1 {
+    color: white;
+    text-align: center;
+    padding: 80px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+.dynamic {
+    background-color: rgb(8, 8, 8);
+    width: 109px;
+    height: 27px;
+    left: 102px;
+    position: relative;
+    border-radius: 20px;
+    top: 20px;
+    border: 1px solid wheat;
+
+}
+
+button:hover {
+    transform: scale(105%);
+    transition: 250ms;
+    transition-timing-function: ease-in;
+    background-color: hsla(0, 1%, 49%, 0.8);
+}
+
+.row {
+    padding-left: 5px;
+}
+
+.brown:hover {
+    background-color: hsla(0, 0%, 36%, 0.6);
+    transform: scale(105%);
+    transition: 250ms;
+    transition-timing-function: ease-in;
+}
+
+.ora:hover {
+    background-color: hsl(39, 100%, 50%);
+    transform: scale(105%);
+    transition: 250ms;
+    transition-timing-function: ease-in;
+}
+
+body {
+    background-image: url(back.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: top
+    ;
+}
+body::before{
+content: "";
+background-color: black;
+position: absolute;
+z-index: 2;
+opacity: 0.4;
+width: 100%;
+height: 100vh;
+}
