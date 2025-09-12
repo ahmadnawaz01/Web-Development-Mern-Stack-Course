@@ -72,6 +72,7 @@ input {
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: 600;
+    z-index: 1555555;
     text-align: right;
     color: white;
     background-color: rgb(0, 0, 0);
