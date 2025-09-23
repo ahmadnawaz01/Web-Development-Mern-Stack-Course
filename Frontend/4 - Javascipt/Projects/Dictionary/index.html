@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dictionary</h1>
+
+    <div class="input">
+      <h2>Enter a word</h2>
+      <input type="text" id="wordInput" placeholder="Type here...">
+      <button id="btn" onclick="fetchDefinition()">Search</button>
+    </div>
+
+    <div class="output">
+      <h2 id="word"></h2>
+      <ul id="definitions"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

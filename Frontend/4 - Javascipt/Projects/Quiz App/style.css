@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.app {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.app h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 5s ease infinite;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: white;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 12px;
+    cursor: pointer;
+    margin: 12px 0;
+    text-align: left;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover:not([disabled]) {
+    background: #0284c7;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+}
+.btn:disabled {
+    cursor: no-drop;
+    opacity: 0.7;
+}
+
+.correct {
+    background: #9aeabc !important;
+    color: #1a3d2f;
+}
+
+.incorrect {
+    background: #ff9393 !important;
+    color: #3d1a1a;
+}
+
+#next {
+    position: relative;
+    background: #0f172a;
+    color: white;
+    font-weight: 600;
+    width: 160px;
+    border: none;
+    padding: 12px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#next::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: inherit;
+    background: conic-gradient(
+        from 0deg,
+        #ff7e5f,
+        #feb47b,
+        #6a11cb,
+        #2575fc,
+        #ff7e5f
+    );
+    z-index: -1;
+    animation: rotateBorder 3s linear infinite;
+}
+
+#next::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    z-index: -1;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

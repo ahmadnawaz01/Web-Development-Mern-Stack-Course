@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0, #00c6ff, #0072ff);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  z-index: -2;
+}
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.player h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #8e2de2, #00c6ff, #ff0099);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 5s ease infinite;
+}
+
+.album-art {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.album-art img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: rotateArt 15s linear infinite;
+  animation-play-state: paused;
+}
+
+.music-info h2 {
+  font-size: 18px;
+  color: #fff;
+}
+.music-info p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  padding: 3px;
+  background: conic-gradient(
+    #8e2de2,
+    #00c6ff,
+    #ff0099,
+    #00f260,
+    #8e2de2
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: rotateBorder 3s linear infinite;
+  z-index: -1;
+}
+.btn:hover {
+  background: #222;
+  color: white;
+}
+.progress-container {
+  background: rgba(255, 255, 255, 0.2);
+  height: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#progress {
+  background: linear-gradient(90deg, #8e2de2, #00c6ff, #ff0099);
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+}
+
+.volume-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#volume {
+  width: 150px;
+  accent-color: #8e2de2;
+  border-radius: 5px;
+  height: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes rotateBorder {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes rotateArt {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
