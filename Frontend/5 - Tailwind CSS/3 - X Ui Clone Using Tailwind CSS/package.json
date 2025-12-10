@@ -1,0 +1,21 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:watch": "nodemon --watch src --ext css,js,html --exec \"npx tailwindcss -i ./src/input.css -o ./dist/output.css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "tailwindcss": "^4.1.17"
+  }
+}
