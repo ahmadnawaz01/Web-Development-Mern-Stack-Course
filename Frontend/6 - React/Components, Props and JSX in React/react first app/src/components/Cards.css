@@ -1,0 +1,9 @@
+.cards
+{
+    border: 2px solid black;
+    padding: 2px;
+    background-color: beige;
+    margin: 10px;
+    width: 15vw;
+    height: fit-content;
+}
