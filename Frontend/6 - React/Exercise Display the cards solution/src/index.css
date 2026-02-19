@@ -1,0 +1,27 @@
+.card{
+  border: 2px solid black;
+  width: 350px;
+  height: 350px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-overflow: ellipsis;
+}
+h1{
+  font-size: x-large;
+  font-style: bold;
+  text-decoration: underline;
+}
+p{
+  font-size: larger;
+  font-weight: 700;
+  
+}
+.container
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: black;
+}
