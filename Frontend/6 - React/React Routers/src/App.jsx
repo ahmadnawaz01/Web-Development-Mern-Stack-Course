@@ -23,7 +23,11 @@ function App() {
   {
     path:"/about",
     element:<><Navbar/><About/></>
-  }
+  },
+  {
+    path:"/user/:username",
+    element:<><Profile/></>
+  },
  ])
   return (
     <>
