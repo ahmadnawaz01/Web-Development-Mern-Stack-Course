@@ -1,2 +1,1 @@
-# Web Development Course
-this is my learning to the web development
+This is my learning to Web Devlopement (Mern Stack) it includes all my pratices topics codes and concept related to that.My learning Roadmap are HTML , CSS, Bootstrap, Tailwindcss,Nodejs,Express js, MongoDB, React, and in the end the NExtjs and i also done some small projects related to each framework or language and a full mern stack projects. 
